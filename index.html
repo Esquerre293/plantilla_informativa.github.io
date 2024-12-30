@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Negocios e Inversiones KL</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Estilo para la imagen interactiva */
+    .mockup-container {
+      display: inline-block;
+      width: auto; /* Mantiene el tamaño original de la imagen */
+      height: auto;
+      perspective: 1000px; /* Añadir perspectiva 3D */
+    }
+
+    .mockup-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Mantiene las proporciones de la imagen */
+      transform-style: preserve-3d;
+      animation: rotate 10s linear infinite; /* Animación de rotación infinita */
+    }
+
+    /* Definición de la animación de rotación */
+    @keyframes rotate {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+
+    /* Estilos para la galería */
+    .gallery {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .carousel-container {
+      position: relative;
+      width: 80%;
+      margin: auto;
+    }
+
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .gallery-item {
+      position: relative;
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay .text {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .indicators {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .indicator {
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .indicator.active {
+      background-color: #717171;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+          <span id="typing-text"></span>
+        </div>
+        <!-- Redes sociales -->
+        <div class="social-icons-top">
+          <a href="https://www.facebook.com/profile.php?id=61563820250721&mibextid=ZbWKwL" target="_blank" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/klnegocioseinversiones?igsh=MTRpZXNteGJwM2F5NQ==" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@neg.inver_kl?_t=ZM-8sdwEcowJyY&_r=1" target="_blank" class="social-icon">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="text-content">
+        <h1>Transformamos tu creatividad en realidad</h1>
+        <p>"En <strong>Subliprint Leo</strong> ofrecemos productos personalizados con estampado y sublimado de alta calidad, adaptados a tus gustos y necesidades"</p>
+        <p>"En <strong style="color: #28a745;">
+          <a href="Libreria/libreria-keyleo.html" style="text-decoration: none; color: #28a745;">Librería Keyleo</a>
+        </strong> ofrecemos una amplia gama de útiles escolares y de oficina, ideales para pequeñas y grandes empresas, con productos de calidad a precios competitivos"</p>        
+        <p>"En <strong style="color: #007bff;">Multipagos Perú</strong> realizamos todo tipo de pagos y trámites de manera rápida y segura"</p>
+        <div class="button-container">
+          <a href="mailto:negocioseinversioneskl@gmail.com?subject=Consulta&body=Hola, me gustaría hacer una consulta." class="create-button">
+            <i class="fas fa-envelope"></i> Contáctanos
+          </a>
+          <a href="https://wa.me/981518655" target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div> 
+      </div>
+      <div class="image-content">
+        <div class="mockup-container">
+          <img src="log/logo4.png" alt="Laptop Mockup" class="mockup-image">
+        </div>
+      </div>
+    </main>
+
+    <!-- Nuevo apartado "¿Por qué Elegirnos?" -->
+    <section class="why-choose-us">
+      <h2>¿Por qué Elegirnos?</h2>
+      <div class="blocks-container">
+        <div class="block" id="block-1">
+          <h3>Calidad Premium</h3>
+          <p>Ofrecemos materiales y técnicas de estampado de alta calidad que garantizan resultados excepcionales y duraderos.</p>
+        </div>
+        <div class="block" id="block-2">
+          <h3>Personalización Total</h3>
+          <p>Diseña productos a tu medida, desde camisetas hasta tazas, o elige entre nuestra exclusiva colección.</p>
+        </div>
+        <div class="block" id="block-3">
+          <h3>Variedad de Productos</h3>
+          <p>Encuentra todo lo que necesitas para personalizar tus artículos, desde ropa hasta accesorios.</p>
+        </div>
+        <div class="block" id="block-4">
+          <h3>Atención Personalizada</h3>
+          <p>Recibe un servicio de atención al cliente de calidad, con asesoramiento a medida para cada proyecto.</p>
+        </div>
+        <div class="block" id="block-5">
+          <h3>Envíos Rápidos</h3>
+          <p>Nos comprometemos a realizar entregas eficientes y puntuales, garantizando la satisfacción del cliente.</p>
+        </div>
+        <div class="block" id="block-6">
+          <h3>Compromiso con la Innovación</h3>
+          <p>Estamos en constante evolución, adoptando nuevas tecnologías y tendencias para ofrecerte lo mejor del mercado.</p>
+        </div>
+      </div>
+    </section>
+</div>
+    <div style="text-align: center;">
+      <h2>Nuestros Productos</h2>
+    </div></div>
+    <!--Carrusel de imágenes -->
+    <section class="gallery">
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="images/imagen 1.jpg" alt="Producto 1">
+          <div class="overlay">
+            <div class="text">Utilizamos técnicas avanzadas de estampado para garantizar colores vibrantes y duraderos.</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/imagen2.jpg" alt="Producto 2">
+          <div class="overlay">
+            <div class="text">La sublimación permite diseños detallados y resistentes al desgaste.</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/imagen3.jpg" alt="Producto 3">
+          <div class="overlay">
+            <div class="text">Calidad premium en cada prenda, perfecta para cualquier ocasión.</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/imagen4.jpg" alt="Producto 4">
+          <div class="overlay">
+            <div class="text">Diseños únicos y personalizados que reflejan tu estilo y personalidad.</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/imagen5.jpg" alt="Producto 5">
+          <div class="overlay">
+            <div class="text">Materiales de alta calidad que aseguran comodidad y durabilidad.</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/imagen6.jpg" alt="Producto 6">
+          <div class="overlay">
+            <div class="text">Innovación constante en nuestros productos para ofrecerte lo mejor.</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/imagen7.jpg" alt="Producto 7">
+          <div class="overlay">
+            <div class="text">Productos personalizados que se adaptan a tus necesidades.</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/imagen8.jpg" alt="Producto 8">
+          <div class="overlay">
+            <div class="text">Compromiso con la calidad y la satisfacción del cliente.</div>
+          </div>
+        </div>
+      </div>
+    <div style="margin-top: 40px;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
